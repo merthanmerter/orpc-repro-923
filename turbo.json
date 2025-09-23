@@ -1,0 +1,12 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"envMode": "strict",
+	"tasks": {
+		"dev": {
+			"cache": false,
+			"persistent": true,
+			"env": ["NODE_ENV"]
+		}
+	},
+	"ui": "stream"
+}

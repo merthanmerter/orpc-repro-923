@@ -1,0 +1,30 @@
+{
+	"name": "app",
+	"module": "index.ts",
+	"devDependencies": {
+		"turbo": "^2.5.6",
+		"@types/bun": "latest",
+		"@biomejs/biome": "2.2.4"
+	},
+	"packageManager": "bun@1.2.22",
+	"engines": {
+    "npm": "please-use-bun",
+    "yarn": "please-use-bun",
+    "node": "please-use-bun",
+    "bun": ">= 1.2.22"
+  },
+	"private": true,
+	"scripts": {
+		"dev": "NODE_ENV=development turbo dev",
+		"lint": "biome check .",
+		"format": "biome format --write ."
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"type": "module",
+	"workspaces": [
+		"client",
+		"server"
+	]
+}
